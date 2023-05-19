@@ -1,0 +1,19 @@
+.f-blur{
+    left:10rem;
+    height: 10rem;
+    width: 30rem;
+
+}
+.socila-share{
+font-size:2rem;
+display: flex;
+gap: 2.5rem;
+align-items: center;
+justify-content: center;
+padding: 3rem;
+color: white;
+}
+.socila-share>svg:hover{
+    cursor: pointer;
+    color: var(--orange);
+}

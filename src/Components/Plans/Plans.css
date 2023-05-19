@@ -1,0 +1,123 @@
+.plans{
+    
+    margin-top: -1rem;
+}
+.plan-blur1{
+    height: 23rem;
+    width: 32rem;
+    left:0;
+}
+.plan-blur2{
+    right:6rem;
+    height: 30rem;
+    width: 22rem;
+}
+.plan-header{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+     font-weight: bold;
+     justify-content: center;
+     font-style: italic;
+     color: white;
+     
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1rem;
+    color: white;
+    width: 18.5rem;
+    background-color: var(--caloryCard);
+    border-radius: 4px;
+
+}
+.card img{
+    width: 2rem;
+}
+.card:nth-child(2){
+    transform:scale(1.1);
+}
+.p-card{
+    display: flex;
+justify-content: center;
+gap: 3rem;
+margin-top: 4rem;
+}
+.card span:first-child{
+    font-size: 2.5rem;
+    
+}
+.card span:nth-child(2){
+font-weight: bold;
+}
+.card .heart{
+    color: var(--orange);
+}
+
+.card span:nth-child(3){
+    font-size: 3rem;
+    font-weight: 600;
+}
+.card2{
+    background: linear-gradient(to bottom, #f52d17, #f59d19);
+}
+.feature {
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+.feature div{
+    display: flex;
+    align-items: center;
+    gap:.7rem;
+}
+.feature div span:first-child{
+    font-size: 1.2rem;
+}
+.card .feature div span:last-child{
+    font-size: 1rem;
+    font-weight: normal;
+}
+.more span:first-child{
+    font-size: .8rem;
+}
+.more span:last-child{
+    font-size: 1.2rem;
+    padding-top: .5rem;
+}
+.more{
+   display: flex;
+   align-items: center;
+}
+.joinbtn{
+    background: white;
+    padding: 8px;
+    color: var(--darkGrey);
+    font-weight: bold;
+    font-size: .9rem;
+    text-align: center;
+}
+.card2 .joinbtn{
+    color: var(--orange);
+}
+@media(max-width:768px){
+    .plans{
+        margin-top: 1rem;
+    }
+    .plan-header{
+        flex-direction: column;
+        gap: .5rem;
+        font-size: 2.5rem;
+    }
+    .p-card{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card:nth-child(2){
+        transform:none;
+    }
+}

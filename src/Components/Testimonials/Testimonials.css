@@ -1,0 +1,97 @@
+.testimonials{
+    
+    padding: 7rem 2rem 0 2rem;
+    display: flex;
+    gap: 1rem;
+    
+}
+.t-left{
+    flex: 1 1;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.t-left>:nth-child(1){
+color: var(--orange);
+font-weight: bold;
+}
+.t-left>:nth-child(2), .t-left>:nth-child(3){
+    font-size: 3rem;
+    font-weight: bold;
+}
+.t-left>:nth-child(4){
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+.t-right{
+    flex: 1;
+    position: relative;
+}
+.t-right>img{
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    object-fit: cover;
+    right: 8rem;
+    top: 2rem;
+}
+.t-right>div:nth-child(1){
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    border: 2px solid orange;
+    right: 9rem;
+    top: .9rem;
+}
+.t-right>div:nth-child(2){
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    background: linear-gradient(to bottom, #f12711, #f58e19);
+    right: 7rem;
+    top: 3rem;
+}
+.arrows{
+    position: absolute;
+    bottom: 1rem;
+    left: 3rem;
+    cursor: pointer;
+    display: flex;
+    gap: 1rem;
+}
+.arrows>span{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+}
+@media (max-width:768px){
+    .testimonials{
+    flex-direction: column;
+    padding: 3rem 2rem;
+    gap: 2rem;
+    }
+    .t-left{ 
+        gap: 1rem;
+    }
+    .t-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .t-right>img{
+        top: 0;
+        right: 0;
+        position: relative;
+       align-self: center;
+    }
+    .t-right>div:nth-child(1), .t-right>div:nth-child(2){
+       display: none;
+    }
+    .arrows{
+        left: 0;
+    }
+    }
+    

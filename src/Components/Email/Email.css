@@ -1,0 +1,58 @@
+.emails{
+    
+    padding: 7rem 2rem 3rem 2rem;
+    display: flex;
+    gap: 1rem;
+   
+}
+.e-left{
+flex: 1 1;
+font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+.e-left>div{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.e-left>div:nth-child(1){
+    width: 10rem;
+    height: 4px;
+    background-color: var(--orange);
+}
+.e-right{
+flex: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.e-container{
+    display: flex;
+    gap: 1rem;
+    background-color: rgb(61, 59, 59);
+    padding: 1rem 2rem;
+}
+.e-container>input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    width:15rem;
+}
+
+.btn-e{
+    width: 5.5rem !important;
+    padding: 9px 0 !important;
+   
+}
+@media(max-width:768px){
+    .emails{
+    flex-direction: column;
+    }
+    .e-left{
+        font-size: 2.4rem;
+            
+        }
+}
